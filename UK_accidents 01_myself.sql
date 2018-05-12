@@ -16,7 +16,7 @@ load data local infile 'c:/Temp/Consumer_Complaints.csv'  into table test_Lizhi 
 use UK_accidents;
 select * from create_a_table;
 
-select sex, severity, time1, sum(number_of_casualties)
+select sex, severity, time, sum(number_of_casualties)
 from
 (
 select
@@ -30,7 +30,7 @@ when accidents_2015.time between '12:01:01' and '17:00:00' then 'afternoon'
 when accidents_2015.time between '17:01:01' and '20:00:00' then 'dusk'
 when accidents_2015.time between '20:01:01' and '24:00:00' then 'night'
 else 'unknown'
-END time1,
+END time,
 accidents_2015.number_of_casualties
 from accidents_2015
 inner join casualities_2015
