@@ -43,5 +43,6 @@ on casualty_severity.code = casualities_2015.casualty_severity
 group by sex, severity, time1
 
 -- a comment
+-- another comment
 
 select * from test.account;
