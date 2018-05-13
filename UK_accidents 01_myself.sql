@@ -41,4 +41,4 @@ inner join casualty_severity
 on casualty_severity.code = casualities_2015.casualty_severity
 ) temp -- all derived tables must have a name
 group by sex, severity, time1
-
+-- nothing
