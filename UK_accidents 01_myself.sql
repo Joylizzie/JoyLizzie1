@@ -44,5 +44,6 @@ group by sex, severity, time1
 
 -- a comment
 -- another comment
+-- more comments
 
 select * from test.account;
